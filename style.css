@@ -1,0 +1,94 @@
+:root {
+    --color-background: #F0F0F0; /* Light grey background */
+    --color-heading: #333333; /* Dark grey for headings */
+    --color-msg: #FFCC00; /* Bright yellow for messages */
+    --color-button: #4CAF50; /* Green for buttons */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+body {
+    background-color: var(--color-background);
+
+}
+
+.heading {
+    text-align: center;
+    background-color: var(--color-heading);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: flex;
+    height: 20rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.option {
+    border-radius: 50%;
+    text-align: center;
+}
+
+.option img {
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.option img:hover {
+    border: 5px solid black;
+    transition: border 0.1s ease-in-out;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+    width: 5vw;
+}
+
+.score p {
+    font-size: 3rem;
+}
+
+.msg {
+    margin: 2rem 0;
+    height: 7vh;
+    width: 40vw;
+    background-color: var(--color-msg);
+    border: 1px solid;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    height: 6vh;
+    width: 10vw;
+    font-size: 1.5rem;
+    background-color: var(--color-button);
+    border-radius: 1rem;
+}
+button:hover{
+    background-color: #5aba5c;
+}
+button:focus {
+    outline: 2px solid black;
+}
